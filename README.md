@@ -18,15 +18,27 @@ This repository documents the system: its architecture, technical decisions, key
 
 ## Screenshots
 
-_Screenshots of the running client will be added here — pending capture batch._
+Screenshots below are from the app running in dev environment with dummy demo data (Dark theme).
 
-<!-- Placeholder — replace with actual screenshots once captured:
+### Login
+
 ![Login](screenshots/01-login.png)
+
+### Dashboard — team view
+
 ![Dashboard](screenshots/02-dashboard.png)
-![Project Detail](screenshots/03-project-detail.png)
+
+### Project summary
+
+![Project summary](screenshots/03-project-detail.png)
+
+### Project management — Tasks tab
+
 ![Manage — Tasks tab](screenshots/04-manage-tasks.png)
+
+### Reports
+
 ![Reports](screenshots/05-reports.png)
--->
 
 ---
 
