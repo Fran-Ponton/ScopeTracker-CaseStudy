@@ -2,7 +2,15 @@
 
 **Case study of an internal project-tracking tool for a small software consultancy.** Native Windows desktop client backed by an ASP.NET Core Web API, PostgreSQL/EF Core, real-time notifications, background jobs and transactional email. Built solo, in production against real users since Phase 1.5 closed on 2026-08-26.
 
-This repository documents the system: its architecture, technical decisions, key metrics and screenshots. The full source code and internal design documentation are private and available on request.
+This repository documents the system: its architecture, technical decisions, key metrics, screenshots and a short video walkthrough. The full source code and internal design documentation are private and available on request.
+
+---
+
+## Video walkthrough
+
+[![SCOPE Tracker — walkthrough (4:37)](https://img.youtube.com/vi/YE5VyqNgOtE/maxresdefault.jpg)](https://youtu.be/YE5VyqNgOtE)
+
+A 4:37 min walkthrough of the running system in dev environment with dummy demo data: login, dashboard, project creation, task management, in-app real-time notification and user invitation flow (triggers a transactional email). Hosted on YouTube as an unlisted video — accessible with the link only.
 
 ---
 
@@ -168,12 +176,6 @@ SCOPE Tracker was built solo, using AI coding assistants throughout, following a
 The four actors coordinate exclusively through versioned files (handoffs, backlog, design decisions), never directly agent-to-agent. Guardrails include verify-before-affirm discipline, per-command timestamp discipline, an empirically-derived instrument-failure taxonomy, and mandatory human click-through before closing any UI-touching unit.
 
 Eight empirical refinements to the methodology were documented across real-world usage during Phase 1 and Phase 1.5, and folded back into the master kit. The methodology is available for consultation on request.
-
----
-
-## Video walkthrough
-
-_A 3-5 minute unlisted walkthrough of the running system — showing login, project creation, real-time notification, transactional email delivery, and test suite execution — will be linked here once recorded._
 
 ---
 
