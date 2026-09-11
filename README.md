@@ -1,6 +1,6 @@
 # SCOPE Tracker — Case Study
 
-**Case study of an internal project-tracking tool for a small software consultancy.** Native Windows desktop client backed by an ASP.NET Core Web API, PostgreSQL/EF Core, real-time notifications, background jobs and transactional email. Built solo, in production against real users since Phase 1.5 closed on 2026-08-26.
+Case study of an internal project-tracking tool built end-to-end for SCOPE, an early-stage software consultancy I co-founded with a partner. Native Windows desktop client backed by an ASP.NET Core Web API, PostgreSQL/EF Core, real-time notifications, background jobs and transactional email. In production use for our own project tracking since Phase 1.5 closed on 2026-08-26.
 
 This repository documents the system: its architecture, technical decisions, key metrics, screenshots and a short video walkthrough. The full source code and internal design documentation are private and available on request.
 
@@ -16,7 +16,7 @@ A 4:37 min walkthrough of the running system in dev environment with dummy demo 
 
 ## Overview
 
-**Problem.** A two-founder consultancy that ships software to SMBs needs to track projects across the Lean MVP Cycle stages, capture real hours per task, record scope changes with commercial context, and produce reports for internal use. Off-the-shelf tools either did not fit the workflow or required commercial information to live in a billing system the consultancy did not want to run.
+**Problem.** An early-stage software consultancy co-founded by two partners that ships software to SMBs needs to track projects across the Lean MVP Cycle stages, capture real hours per task, record scope changes with commercial context, and produce reports for internal use. Off-the-shelf tools either did not fit the workflow or required commercial information to live in a billing system the consultancy did not want to run.
 
 **Users.** Two founders (Owner role), plus room for additional Members and Contributors per project. Client-facing role deferred to a future phase.
 
@@ -166,16 +166,9 @@ As of the last release cut (Phase 1.5 closure, 2026-08-26):
 
 ## AI-assisted development
 
-SCOPE Tracker was built solo, using AI coding assistants throughout, following a reusable methodology developed in parallel. The methodology formalizes a four-actor model:
+Built solo with AI coding assistants throughout, following a reusable four-actor methodology I developed in parallel: Human Operator, Planner, Reviewer, and Implementer, coordinating exclusively through versioned files. Guardrails include verify-before-affirm discipline, per-command timestamp discipline, an instrument-failure taxonomy derived empirically, and mandatory human click-through before closing any UI-touching unit.
 
-- **Human Operator** — decides, ratifies, executes commands.
-- **Planner** — strategic planning agent, defines scope and sequence per phase.
-- **Reviewer** — tactical peer-audit agent, audits plans pre-execution and results post-execution.
-- **Implementer** — coding agent with toolchain access, executes ratified units.
-
-The four actors coordinate exclusively through versioned files (handoffs, backlog, design decisions), never directly agent-to-agent. Guardrails include verify-before-affirm discipline, per-command timestamp discipline, an empirically-derived instrument-failure taxonomy, and mandatory human click-through before closing any UI-touching unit.
-
-Eight empirical refinements to the methodology were documented across real-world usage during Phase 1 and Phase 1.5, and folded back into the master kit. The methodology is available for consultation on request.
+The methodology summary overview is available for consultation on request.
 
 ---
 
