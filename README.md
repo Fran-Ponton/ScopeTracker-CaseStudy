@@ -180,7 +180,9 @@ The complete source repository is private. Read access can be granted on request
 
 ## License
 
-This case study documentation is licensed under [MIT](LICENSE). Applies to the content of this repository (README, diagrams, screenshots), not to the underlying source code of SCOPE Tracker, which is governed separately.
+The documentation, diagrams and screenshots in this repository are licensed under [MIT](LICENSE).
+
+The underlying source code of SCOPE Tracker is **not covered** by this license. All rights reserved. Read access to the source repository can be granted on request for interview or evaluation purposes.
 
 ---
 
