@@ -168,8 +168,7 @@ As of the last release cut (Phase 1.5 closure, 2026-08-26):
 
 Built solo with AI coding assistants throughout, following a reusable four-actor methodology I developed in parallel: Human Operator, Planner, Reviewer, and Implementer, coordinating exclusively through versioned files. Guardrails include verify-before-affirm discipline, per-command timestamp discipline, an instrument-failure taxonomy derived empirically, and mandatory human click-through before closing any UI-touching unit.
 
-The methodology summary overview is available for consultation on request.
-
+A summary overview of the methodology is available on request.
 ---
 
 ## Full source code
